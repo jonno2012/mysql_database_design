@@ -7,12 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
-class Post extends Model
+class Tag extends Model
 {
     use HasFactory;
 
-    public function Tag(): BelongsToMany
+    public function post(): BelongsToMany
     {
-        return $this->belongsToMany(Tag::class);
+        return $this->belongsToMany(Post::class);
     }
 }
