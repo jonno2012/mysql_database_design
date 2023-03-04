@@ -20,3 +20,12 @@ Indexing
 EXPLAIN SELECT * FROM sakila.film_actor where film_id = 25; - the EXPLAIN command can give you a load of info about
 the query like the number of rows being examined. This can typically be reduced by adding indexes. If the 'Type' column
 is set tp 'All' it means there are no indexed and it may be an idea to add some indexing.
+
+Use WHERE downloaded_at BETWEEN '2019-01-01 00:00:00' and '2020-01-01 00:00:00' to reduce searchable rows.
+
+- If there are no indexed fields in the WHERE clause this can lead to long queries time as the db will have search through
+all the rows. EXPLAIN will have a 'type' of 'index' if there are indexes on the table but none are being used in the query.
+- GROUP BY can further increase query time.
+
+If we put an index on downloaded_at on the above table, this could drastically reduce the amount of time it takes to run
+the query. Use EXPLAIN to compare the difference.
