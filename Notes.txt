@@ -13,3 +13,10 @@ afterwards.
 Many to Many
 ------------
 It is very important to mark join table entries as unique.
+
+Indexing
+--------
+- Like giving the db an index. Like alphabetical order in a phone book.
+EXPLAIN SELECT * FROM sakila.film_actor where film_id = 25; - the EXPLAIN command can give you a load of info about
+the query like the number of rows being examined. This can typically be reduced by adding indexes. If the 'Type' column
+is set tp 'All' it means there are no indexed and it may be an idea to add some indexing.
