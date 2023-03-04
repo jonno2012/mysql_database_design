@@ -1,0 +1,3 @@
+Foreign key constraints
+------------------------
+- The 'cascade' attribute will mean that the child rows will be deleted etc when the parent is first.
