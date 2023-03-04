@@ -2,6 +2,10 @@ Foreign key constraints
 ------------------------
 - The 'cascade' attribute will mean that the child rows will be deleted etc when the parent is first.
 
-Joins
------
-Venn diagrams - https://blog.codinghorror.com/a-visual-explanation-of-sql-joins/
+
+* Sub queries can be expensive. Can you find an alternative way of returning the same result set?
+
+Aggregate Data
+---------------
+The 'Having' keyword can apply filtering after aggregating/grouping has occurred and as such will behave like a WHERE clause but
+afterwards.
