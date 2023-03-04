@@ -29,3 +29,6 @@ all the rows. EXPLAIN will have a 'type' of 'index' if there are indexes on the 
 
 If we put an index on downloaded_at on the above table, this could drastically reduce the amount of time it takes to run
 the query. Use EXPLAIN to compare the difference.
+
+In MYSQL and some other SQL DBs, indexes are added on foreign key relationships automatically. Some SQL DBs don't do this.
+If you ever use an SQL DB which doesn't add foreign key indexes automatically they will have to be included in your migrations.
