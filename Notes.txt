@@ -9,3 +9,7 @@ Aggregate Data
 ---------------
 The 'Having' keyword can apply filtering after aggregating/grouping has occurred and as such will behave like a WHERE clause but
 afterwards.
+
+Many to Many
+------------
+It is very important to mark join table entries as unique.

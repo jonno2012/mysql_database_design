@@ -21,6 +21,7 @@ return new class extends Migration
                 ->constrained()
                 ->cascadeOnDelete()
                 ->cascadeOnUpdate();
+            $table->unique(['post_id', 'tag_id']);
             $table->timestamps();
         });
     }
