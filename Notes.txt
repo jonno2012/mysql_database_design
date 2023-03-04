@@ -1,3 +1,7 @@
 Foreign key constraints
 ------------------------
 - The 'cascade' attribute will mean that the child rows will be deleted etc when the parent is first.
+
+Joins
+-----
+Venn diagrams - https://blog.codinghorror.com/a-visual-explanation-of-sql-joins/
