@@ -1,0 +1,4 @@
+docker run --name mysql-database-design -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mysql
+
+see https://hub.docker.com/_/mysql for the official mysql docker image which is the one being used above. Note I added the -p 3306:3306 which
+isn't in it by default. Omitting the :tag bit at the end will download the latest version.
